@@ -28,5 +28,5 @@ VOLUME     [ "/var/spool/postfix", "/etc/postfix", "/etc/opendkim/keys" ]
 USER       root
 WORKDIR    /tmp
 
-EXPOSE     587
+EXPOSE     587 25
 CMD        ["/bin/sh", "-c", "/run.sh"]
